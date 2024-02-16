@@ -64,7 +64,7 @@ form input[type=submit]:hover {
 
 
 form input[type=text] {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -99,13 +99,28 @@ legend {
 @media (max-width: 768px){}
 </head></style>
 <h1>ASI Essential Eight Light Self-Assessment</h1>
-<form action="" method="post">
+<form action="https://formspree.io/f/mnqedzrn" method="POST">
+
+ <h2>Contact Details</h2>
+    <label for="FirstName">First Name</label><br>
+    <input type="text" id="FirstName-input" name="FirstName" required>
+    <br>
+    <label for="LastName">Last Name</label><br>
+    <input type="text" id="LastName-input" name="FirstName" required>
+    <br>
+    <label for="Company">Company</label><br>
+    <input type="text" id="Company-input" name="Company" required>
+    <br>
+    <label for="Email">Email</label><br>
+    <input type="text" id="Email-input" name="Email" required>
+    <br>
+
 <h2>Patch applications</h2>
 
 <label for="ML1-PA-01">Do you use an automated tool\application to find all computers and devices on your network every two weeks?</label><br>
-<input type="radio" id="ML1-PA-01-yes" name="ML1-PA-01-name" value="yes">
+<input type="radio" id="ML1-PA-01-yes" name="ML1-PA-01" value="yes" required>
 <label for="ML1-PA-01-yes">Yes</label>
-<input type="radio" id="ML1-PA-01-no" name="ML1-PA-01-name" value="no">
+<input type="radio" id="ML1-PA-01-no" name="ML1-PA-01" value="no" required>
 <label for="ML1-PA-01-no">No</label>
 <div id="ML1-PA-01-details" hidden>
     <label for="ML1-PA-01-Detailed">Please Provide details</label>
@@ -114,10 +129,10 @@ legend {
 <br>
 
 
-<label for="ML1-PA-02">Do you have software that scans vulnerabilities on your network and does it scan at�least every 24 hours?</label><br>
-<input type="radio" id="ML1-PA-02-yes" name="ML1-PA-02-name" value="yes">
+<label for="ML1-PA-02">Do you have software that scans vulnerabilities on your network and does it scan at least every 24 hours?</label><br>
+<input type="radio" id="ML1-PA-02-yes" name="ML1-PA-02" value="yes" required>
 <label for="ML1-PA-02-yes">Yes</label>
-<input type="radio" id="ML1-PA-02-no" name="ML1-PA-02-name" value="no">
+<input type="radio" id="ML1-PA-02-no" name="ML1-PA-02" value="no" required>
 <label for="ML1-PA-02-no">No</label>
 <div id="ML1-PA-02-details" hidden>
     <label for="ML1-PA-02-Detailed">Please Provide details</label>
@@ -127,9 +142,9 @@ legend {
 
 
 <label for="ML1-PA-03">How often do you check for missing updates in your online services? Is it done daily?</label><br>
-<input type="radio" id="ML1-PA-03-yes" name="ML1-PA-03-name" value="yes">
+<input type="radio" id="ML1-PA-03-yes" name="ML1-PA-03" value="yes" required>
 <label for="ML1-PA-03-yes">Yes</label>
-<input type="radio" id="ML1-PA-03-no" name="ML1-PA-03-name" value="no">
+<input type="radio" id="ML1-PA-03-no" name="ML1-PA-03" value="no" required>
 <label for="ML1-PA-03-no">No</label>
 <div id="ML1-PA-03-details" hidden>
     <label for="ML1-PA-03-Detailed">Please Provide details</label>
@@ -139,9 +154,9 @@ legend {
 
 
 <label for="ML1-PA-04">Are missing patches or updates for office tools, browsers, email, PDF software, and security products checked at least once a week?</label><br>
-<input type="radio" id="ML1-PA-04-yes" name="ML1-PA-04-name" value="yes">
+<input type="radio" id="ML1-PA-04-yes" name="ML1-PA-04" value="yes" required>
 <label for="ML1-PA-04-yes">Yes</label>
-<input type="radio" id="ML1-PA-04-no" name="ML1-PA-04-name" value="no">
+<input type="radio" id="ML1-PA-04-no" name="ML1-PA-04" value="no" required>
 <label for="ML1-PA-04-no">No</label>
 <div id="ML1-PA-04-details" hidden>
     <label for="ML1-PA-04-Detailed">Please Provide details</label>
@@ -151,9 +166,9 @@ legend {
 
 
 <label for="ML1-PA-05">When critical vulnerabilities are found in online services, are patches applied within 48 hours?</label><br>
-<input type="radio" id="ML1-PA-05-yes" name="ML1-PA-05-name" value="yes">
+<input type="radio" id="ML1-PA-05-yes" name="ML1-PA-05" value="yes" required>
 <label for="ML1-PA-05-yes">Yes</label>
-<input type="radio" id="ML1-PA-05-no" name="ML1-PA-05-name" value="no">
+<input type="radio" id="ML1-PA-05-no" name="ML1-PA-05" value="no" required>
 <label for="ML1-PA-05-no">No</label>
 <div id="ML1-PA-05-details" hidden>
     <label for="ML1-PA-05-Detailed">Please Provide details</label>
@@ -163,9 +178,9 @@ legend {
 
 
 <label for="ML1-PA-06">Do you apply patches within two weeks for non-critical vulnerabilities in online services without active exploits?</label><br>
-<input type="radio" id="ML1-PA-06-yes" name="ML1-PA-06-name" value="yes">
+<input type="radio" id="ML1-PA-06-yes" name="ML1-PA-06" value="yes" required>
 <label for="ML1-PA-06-yes">Yes</label>
-<input type="radio" id="ML1-PA-06-no" name="ML1-PA-06-name" value="no">
+<input type="radio" id="ML1-PA-06-no" name="ML1-PA-06" value="no" required>
 <label for="ML1-PA-06-no">No</label>
 <div id="ML1-PA-06-details" hidden>
     <label for="ML1-PA-06-Detailed">Please Provide details</label>
@@ -175,9 +190,9 @@ legend {
 
 
 <label for="ML1-PA-07">Are updates for office productivity suites, web browsers, email clients, PDF software, and security products applied within two weeks of their release?</label><br>
-<input type="radio" id="ML1-PA-07-yes" name="ML1-PA-07-name" value="yes">
+<input type="radio" id="ML1-PA-07-yes" name="ML1-PA-07" value="yes" required>
 <label for="ML1-PA-07-yes">Yes</label>
-<input type="radio" id="ML1-PA-07-no" name="ML1-PA-07-name" value="no">
+<input type="radio" id="ML1-PA-07-no" name="ML1-PA-07" value="no" required>
 <label for="ML1-PA-07-no">No</label>
 <div id="ML1-PA-07-details" hidden>
     <label for="ML1-PA-07-Detailed">Please Provide details</label>
@@ -187,9 +202,9 @@ legend {
 
 
 <label for="ML1-PA-08">Do you remove or stop using online services that the vendor no longer supports?</label><br>
-<input type="radio" id="ML1-PA-08-yes" name="ML1-PA-08-name" value="yes">
+<input type="radio" id="ML1-PA-08-yes" name="ML1-PA-08" value="yes" required>
 <label for="ML1-PA-08-yes">Yes</label>
-<input type="radio" id="ML1-PA-08-no" name="ML1-PA-08-name" value="no">
+<input type="radio" id="ML1-PA-08-no" name="ML1-PA-08" value="no" required>
 <label for="ML1-PA-08-no">No</label>
 <div id="ML1-PA-08-details" hidden>
     <label for="ML1-PA-08-Detailed">Please Provide details</label>
@@ -199,9 +214,9 @@ legend {
 
 
 <label for="ML1-PA-09">Do you ensure they are removed from your systems for software like office tools, browsers, email clients, PDF readers, and security software their creators no longer support?</label><br>
-<input type="radio" id="ML1-PA-09-yes" name="ML1-PA-09-name" value="yes">
+<input type="radio" id="ML1-PA-09-yes" name="ML1-PA-09" value="yes" required>
 <label for="ML1-PA-09-yes">Yes</label>
-<input type="radio" id="ML1-PA-09-no" name="ML1-PA-09-name" value="no">
+<input type="radio" id="ML1-PA-09-no" name="ML1-PA-09" value="no" required>
 <label for="ML1-PA-09-no">No</label>
 <div id="ML1-PA-09-details" hidden>
     <label for="ML1-PA-09-Detailed">Please Provide details</label>
@@ -212,9 +227,9 @@ legend {
 <h2>Patch operating systems</h2>
 
 <label for="ML1-PO-01">Do you have an automated tool\Application that scans every two weeks to find all devices(Firewalls\Printers\Laptops) connected to your network?</label><br>
-<input type="radio" id="ML1-PO-01-yes" name="ML1-PO-01-name" value="yes">
+<input type="radio" id="ML1-PO-01-yes" name="ML1-PO-01" value="yes" required>
 <label for="ML1-PO-01-yes">Yes</label>
-<input type="radio" id="ML1-PO-01-no" name="ML1-PO-01-name" value="no">
+<input type="radio" id="ML1-PO-01-no" name="ML1-PO-01" value="no" required>
 <label for="ML1-PO-01-no">No</label>
 <div id="ML1-PO-01-details" hidden>
     <label for="ML1-PO-01-Detailed">Please Provide details</label>
@@ -224,9 +239,9 @@ legend {
 
 
 <label for="ML1-PO-02">Is the tool you use for scanning your systems for missing operating system updates updated at least every 24 hours?</label><br>
-<input type="radio" id="ML1-PO-02-yes" name="ML1-PO-02-name" value="yes">
+<input type="radio" id="ML1-PO-02-yes" name="ML1-PO-02" value="yes" required>
 <label for="ML1-PO-02-yes">Yes</label>
-<input type="radio" id="ML1-PO-02-no" name="ML1-PO-02-name" value="no">
+<input type="radio" id="ML1-PO-02-no" name="ML1-PO-02" value="no" required>
 <label for="ML1-PO-02-no">No</label>
 <div id="ML1-PO-02-details" hidden>
     <label for="ML1-PO-02-Detailed">Please Provide details</label>
@@ -236,9 +251,9 @@ legend {
 
 
 <label for="ML1-PO-03">Are missing updates in the operating systems of your internet-facing servers and devices checked at least daily?</label><br>
-<input type="radio" id="ML1-PO-03-yes" name="ML1-PO-03-name" value="yes">
+<input type="radio" id="ML1-PO-03-yes" name="ML1-PO-03" value="yes" required>
 <label for="ML1-PO-03-yes">Yes</label>
-<input type="radio" id="ML1-PO-03-no" name="ML1-PO-03-name" value="no">
+<input type="radio" id="ML1-PO-03-no" name="ML1-PO-03" value="no" required>
 <label for="ML1-PO-03-no">No</label>
 <div id="ML1-PO-03-details" hidden>
     <label for="ML1-PO-03-Detailed">Please Provide details</label>
@@ -248,9 +263,9 @@ legend {
 
 
 <label for="ML1-PO-04">Are missing patches or updates for the workstation?s operating systems and non-internet-facing devices checked at least every two weeks?</label><br>
-<input type="radio" id="ML1-PO-04-yes" name="ML1-PO-04-name" value="yes">
+<input type="radio" id="ML1-PO-04-yes" name="ML1-PO-04" value="yes" required>
 <label for="ML1-PO-04-yes">Yes</label>
-<input type="radio" id="ML1-PO-04-no" name="ML1-PO-04-name" value="no">
+<input type="radio" id="ML1-PO-04-no" name="ML1-PO-04" value="no" required>
 <label for="ML1-PO-04-no">No</label>
 <div id="ML1-PO-04-details" hidden>
     <label for="ML1-PO-04-Detailed">Please Provide details</label>
@@ -260,9 +275,9 @@ legend {
 
 
 <label for="ML1-PO-05">When critical vulnerabilities are identified in the operating systems of your internet-facing servers and devices, are patches applied within 48 hours?</label><br>
-<input type="radio" id="ML1-PO-05-yes" name="ML1-PO-05-name" value="yes">
+<input type="radio" id="ML1-PO-05-yes" name="ML1-PO-05" value="yes" required>
 <label for="ML1-PO-05-yes">Yes</label>
-<input type="radio" id="ML1-PO-05-no" name="ML1-PO-05-name" value="no">
+<input type="radio" id="ML1-PO-05-no" name="ML1-PO-05" value="no" required>
 <label for="ML1-PO-05-no">No</label>
 <div id="ML1-PO-05-details" hidden>
     <label for="ML1-PO-05-Detailed">Please Provide details</label>
@@ -272,9 +287,9 @@ legend {
 
 
 <label for="ML1-PO-06">Do you apply patches within two weeks for non-critical vulnerabilities in the operating systems of internet-facing servers and devices?</label><br>
-<input type="radio" id="ML1-PO-06-yes" name="ML1-PO-06-name" value="yes">
+<input type="radio" id="ML1-PO-06-yes" name="ML1-PO-06" value="yes" required>
 <label for="ML1-PO-06-yes">Yes</label>
-<input type="radio" id="ML1-PO-06-no" name="ML1-PO-06-name" value="no">
+<input type="radio" id="ML1-PO-06-no" name="ML1-PO-06" value="no" required>
 <label for="ML1-PO-06-no">No</label>
 <div id="ML1-PO-06-details" hidden>
     <label for="ML1-PO-06-Detailed">Please Provide details</label>
@@ -284,9 +299,9 @@ legend {
 
 
 <label for="ML1-PO-07">Are updates for the operating systems of workstations, non-internet-facing servers, and devices applied within one month of release?</label><br>
-<input type="radio" id="ML1-PO-07-yes" name="ML1-PO-07-name" value="yes">
+<input type="radio" id="ML1-PO-07-yes" name="ML1-PO-07" value="yes" required>
 <label for="ML1-PO-07-yes">Yes</label>
-<input type="radio" id="ML1-PO-07-no" name="ML1-PO-07-name" value="no">
+<input type="radio" id="ML1-PO-07-no" name="ML1-PO-07" value="no" required>
 <label for="ML1-PO-07-no">No</label>
 <div id="ML1-PO-07-details" hidden>
     <label for="ML1-PO-07-Detailed">Please Provide details</label>
@@ -296,9 +311,9 @@ legend {
 
 
 <label for="ML1-PO-08">Do you replace operating systems no longer supported by their vendors to ensure they are up to date?</label><br>
-<input type="radio" id="ML1-PO-08-yes" name="ML1-PO-08-name" value="yes">
+<input type="radio" id="ML1-PO-08-yes" name="ML1-PO-08" value="yes" required>
 <label for="ML1-PO-08-yes">Yes</label>
-<input type="radio" id="ML1-PO-08-no" name="ML1-PO-08-name" value="no">
+<input type="radio" id="ML1-PO-08-no" name="ML1-PO-08" value="no" required>
 <label for="ML1-PO-08-no">No</label>
 <div id="ML1-PO-08-details" hidden>
     <label for="ML1-PO-08-Detailed">Please Provide details</label>
@@ -309,9 +324,9 @@ legend {
 <h2>Multi-factor authentication</h2>
 
 <label for="ML1-MF-01">Do you use a two-step verification process for logging into your organisation?s online services that handle sensitive data?</label><br>
-<input type="radio" id="ML1-MF-01-yes" name="ML1-MF-01-name" value="yes">
+<input type="radio" id="ML1-MF-01-yes" name="ML1-MF-01" value="yes" required>
 <label for="ML1-MF-01-yes">Yes</label>
-<input type="radio" id="ML1-MF-01-no" name="ML1-MF-01-name" value="no">
+<input type="radio" id="ML1-MF-01-no" name="ML1-MF-01" value="no" required>
 <label for="ML1-MF-01-no">No</label>
 <div id="ML1-MF-01-details" hidden>
     <label for="ML1-MF-01-Detailed">Please Provide details</label>
@@ -321,9 +336,9 @@ legend {
 
 
 <label for="ML1-MF-02">Is two-step verification required for accessing third-party online services that manage your organisation?s sensitive data?</label><br>
-<input type="radio" id="ML1-MF-02-yes" name="ML1-MF-02-name" value="yes">
+<input type="radio" id="ML1-MF-02-yes" name="ML1-MF-02" value="yes" required>
 <label for="ML1-MF-02-yes">Yes</label>
-<input type="radio" id="ML1-MF-02-no" name="ML1-MF-02-name" value="no">
+<input type="radio" id="ML1-MF-02-no" name="ML1-MF-02" value="no" required>
 <label for="ML1-MF-02-no">No</label>
 <div id="ML1-MF-02-details" hidden>
     <label for="ML1-MF-02-Detailed">Please Provide details</label>
@@ -333,9 +348,9 @@ legend {
 
 
 <label for="ML1-MF-03">For third-party services that process non-sensitive data, is two-step verification implemented where available?</label><br>
-<input type="radio" id="ML1-MF-03-yes" name="ML1-MF-03-name" value="yes">
+<input type="radio" id="ML1-MF-03-yes" name="ML1-MF-03" value="yes" required>
 <label for="ML1-MF-03-yes">Yes</label>
-<input type="radio" id="ML1-MF-03-no" name="ML1-MF-03-name" value="no">
+<input type="radio" id="ML1-MF-03-no" name="ML1-MF-03" value="no" required>
 <label for="ML1-MF-03-no">No</label>
 <div id="ML1-MF-03-details" hidden>
     <label for="ML1-MF-03-Detailed">Please Provide details</label>
@@ -345,9 +360,9 @@ legend {
 
 
 <label for="ML1-MF-04">Are customers required to use a two-step verification process for accessing online services that handle sensitive customer data?</label><br>
-<input type="radio" id="ML1-MF-04-yes" name="ML1-MF-04-name" value="yes">
+<input type="radio" id="ML1-MF-04-yes" name="ML1-MF-04" value="yes" required>
 <label for="ML1-MF-04-yes">Yes</label>
-<input type="radio" id="ML1-MF-04-no" name="ML1-MF-04-name" value="no">
+<input type="radio" id="ML1-MF-04-no" name="ML1-MF-04" value="no" required>
 <label for="ML1-MF-04-no">No</label>
 <div id="ML1-MF-04-details" hidden>
     <label for="ML1-MF-04-Detailed">Please Provide details</label>
@@ -357,9 +372,9 @@ legend {
 
 
 <label for="ML1-MF-05">Does the two-step verification process involve something the user has (like a security token or mobile app) and something the user knows (like a password) or is (like a fingerprint)?</label><br>
-<input type="radio" id="ML1-MF-05-yes" name="ML1-MF-05-name" value="yes">
+<input type="radio" id="ML1-MF-05-yes" name="ML1-MF-05" value="yes" required>
 <label for="ML1-MF-05-yes">Yes</label>
-<input type="radio" id="ML1-MF-05-no" name="ML1-MF-05-name" value="no">
+<input type="radio" id="ML1-MF-05-no" name="ML1-MF-05" value="no" required>
 <label for="ML1-MF-05-no">No</label>
 <div id="ML1-MF-05-details" hidden>
     <label for="ML1-MF-05-Detailed">Please Provide details</label>
@@ -369,9 +384,9 @@ legend {
 
 
 <label for="ML1-MF-06">Are all users, including those accessing third-party services for customer data, subject to two-step verification?</label><br>
-<input type="radio" id="ML1-MF-06-yes" name="ML1-MF-06-name" value="yes">
+<input type="radio" id="ML1-MF-06-yes" name="ML1-MF-06" value="yes" required>
 <label for="ML1-MF-06-yes">Yes</label>
-<input type="radio" id="ML1-MF-06-no" name="ML1-MF-06-name" value="no">
+<input type="radio" id="ML1-MF-06-no" name="ML1-MF-06" value="no" required>
 <label for="ML1-MF-06-no">No</label>
 <div id="ML1-MF-06-details" hidden>
     <label for="ML1-MF-06-Detailed">Please Provide details</label>
@@ -381,9 +396,9 @@ legend {
 
 
 <label for="ML1-MF-07">When using multi-factor authentication (MFA), do you ensure it involves a combination of something the user has (like a token or mobile app) and something the user knows (like a password) or something the user is (like a fingerprint)?</label><br>
-<input type="radio" id="ML1-MF-07-yes" name="ML1-MF-07-name" value="yes">
+<input type="radio" id="ML1-MF-07-yes" name="ML1-MF-07" value="yes" required>
 <label for="ML1-MF-07-yes">Yes</label>
-<input type="radio" id="ML1-MF-07-no" name="ML1-MF-07-name" value="no">
+<input type="radio" id="ML1-MF-07-no" name="ML1-MF-07" value="no" required>
 <label for="ML1-MF-07-no">No</label>
 <div id="ML1-MF-07-details" hidden>
     <label for="ML1-MF-07-Detailed">Please Provide details</label>
@@ -394,9 +409,9 @@ legend {
 <h2>Restrict administrative privileges</h2>
 
 <label for="ML1-RA-01">Is there a process to validate the need for administrative access when it?s first requested?</label><br>
-<input type="radio" id="ML1-RA-01-yes" name="ML1-RA-01-name" value="yes">
+<input type="radio" id="ML1-RA-01-yes" name="ML1-RA-01" value="yes" required>
 <label for="ML1-RA-01-yes">Yes</label>
-<input type="radio" id="ML1-RA-01-no" name="ML1-RA-01-name" value="no">
+<input type="radio" id="ML1-RA-01-no" name="ML1-RA-01" value="no" required>
 <label for="ML1-RA-01-no">No</label>
 <div id="ML1-RA-01-details" hidden>
     <label for="ML1-RA-01-Detailed">Please Provide details</label>
@@ -406,9 +421,9 @@ legend {
 
 
 <label for="ML1-RA-02">Are users with administrative duties given separate accounts for their admin tasks?</label><br>
-<input type="radio" id="ML1-RA-02-yes" name="ML1-RA-02-name" value="yes">
+<input type="radio" id="ML1-RA-02-yes" name="ML1-RA-02" value="yes" required>
 <label for="ML1-RA-02-yes">Yes</label>
-<input type="radio" id="ML1-RA-02-no" name="ML1-RA-02-name" value="no">
+<input type="radio" id="ML1-RA-02-no" name="ML1-RA-02" value="no" required>
 <label for="ML1-RA-02-no">No</label>
 <div id="ML1-RA-02-details" hidden>
     <label for="ML1-RA-02-Detailed">Please Provide details</label>
@@ -418,9 +433,9 @@ legend {
 
 
 <label for="ML1-RA-03">Are administrative accounts restricted from accessing the internet, email, and web services, except where precisely needed for their duties?</label><br>
-<input type="radio" id="ML1-RA-03-yes" name="ML1-RA-03-name" value="yes">
+<input type="radio" id="ML1-RA-03-yes" name="ML1-RA-03" value="yes" required>
 <label for="ML1-RA-03-yes">Yes</label>
-<input type="radio" id="ML1-RA-03-no" name="ML1-RA-03-name" value="no">
+<input type="radio" id="ML1-RA-03-no" name="ML1-RA-03" value="no" required>
 <label for="ML1-RA-03-no">No</label>
 <div id="ML1-RA-03-details" hidden>
     <label for="ML1-RA-03-Detailed">Please Provide details</label>
@@ -430,9 +445,9 @@ legend {
 
 
 <label for="ML1-RA-04">Are the exceptions for admin accounts accessing online services clearly defined and limited?</label><br>
-<input type="radio" id="ML1-RA-04-yes" name="ML1-RA-04-name" value="yes">
+<input type="radio" id="ML1-RA-04-yes" name="ML1-RA-04" value="yes" required>
 <label for="ML1-RA-04-yes">Yes</label>
-<input type="radio" id="ML1-RA-04-no" name="ML1-RA-04-name" value="no">
+<input type="radio" id="ML1-RA-04-no" name="ML1-RA-04" value="no" required>
 <label for="ML1-RA-04-no">No</label>
 <div id="ML1-RA-04-details" hidden>
     <label for="ML1-RA-04-Detailed">Please Provide details</label>
@@ -442,9 +457,9 @@ legend {
 
 
 <label for="ML1-RA-05">Do administrative users operate from separate systems or networks for their admin tasks versus regular tasks?</label><br>
-<input type="radio" id="ML1-RA-05-yes" name="ML1-RA-05-name" value="yes">
+<input type="radio" id="ML1-RA-05-yes" name="ML1-RA-05" value="yes" required>
 <label for="ML1-RA-05-yes">Yes</label>
-<input type="radio" id="ML1-RA-05-no" name="ML1-RA-05-name" value="no">
+<input type="radio" id="ML1-RA-05-no" name="ML1-RA-05" value="no" required>
 <label for="ML1-RA-05-no">No</label>
 <div id="ML1-RA-05-details" hidden>
     <label for="ML1-RA-05-Detailed">Please Provide details</label>
@@ -454,9 +469,9 @@ legend {
 
 
 <label for="ML1-RA-06">Can standard users access the admin environment, or vice versa, without proper authorisation?</label><br>
-<input type="radio" id="ML1-RA-06-yes" name="ML1-RA-06-name" value="yes">
+<input type="radio" id="ML1-RA-06-yes" name="ML1-RA-06" value="yes" required>
 <label for="ML1-RA-06-yes">Yes</label>
-<input type="radio" id="ML1-RA-06-no" name="ML1-RA-06-name" value="no">
+<input type="radio" id="ML1-RA-06-no" name="ML1-RA-06" value="no" required>
 <label for="ML1-RA-06-no">No</label>
 <div id="ML1-RA-06-details" hidden>
     <label for="ML1-RA-06-Detailed">Please Provide details</label>
@@ -466,9 +481,9 @@ legend {
 
 
 <label for="ML1-RA-07">Except for local admin accounts, are administrative accounts prevented from logging into standard user environments?</label><br>
-<input type="radio" id="ML1-RA-07-yes" name="ML1-RA-07-name" value="yes">
+<input type="radio" id="ML1-RA-07-yes" name="ML1-RA-07" value="yes" required>
 <label for="ML1-RA-07-yes">Yes</label>
-<input type="radio" id="ML1-RA-07-no" name="ML1-RA-07-name" value="no">
+<input type="radio" id="ML1-RA-07-no" name="ML1-RA-07" value="no" required>
 <label for="ML1-RA-07-no">No</label>
 <div id="ML1-RA-07-details" hidden>
     <label for="ML1-RA-07-Detailed">Please Provide details</label>
@@ -479,9 +494,9 @@ legend {
 <h2>Application control</h2>
 
 <label for="ML1-AC-01">Is there a system in place that only allows approved software to run on workstations?</label><br>
-<input type="radio" id="ML1-AC-01-yes" name="ML1-AC-01-name" value="yes">
+<input type="radio" id="ML1-AC-01-yes" name="ML1-AC-01" value="yes" required>
 <label for="ML1-AC-01-yes">Yes</label>
-<input type="radio" id="ML1-AC-01-no" name="ML1-AC-01-name" value="no">
+<input type="radio" id="ML1-AC-01-no" name="ML1-AC-01" value="no" required>
 <label for="ML1-AC-01-no">No</label>
 <div id="ML1-AC-01-details" hidden>
     <label for="ML1-AC-01-Detailed">Please Provide details</label>
@@ -491,9 +506,9 @@ legend {
 
 
 <label for="ML1-AC-02">Does your application control cover and monitor user profiles and temporary folders used by operating systems, web browsers, and email clients?</label><br>
-<input type="radio" id="ML1-AC-02-yes" name="ML1-AC-02-name" value="yes">
+<input type="radio" id="ML1-AC-02-yes" name="ML1-AC-02" value="yes" required>
 <label for="ML1-AC-02-yes">Yes</label>
-<input type="radio" id="ML1-AC-02-no" name="ML1-AC-02-name" value="no">
+<input type="radio" id="ML1-AC-02-no" name="ML1-AC-02" value="no" required>
 <label for="ML1-AC-02-no">No</label>
 <div id="ML1-AC-02-details" hidden>
     <label for="ML1-AC-02-Detailed">Please Provide details</label>
@@ -503,9 +518,9 @@ legend {
 
 
 <label for="ML1-AC-03">Are rules in place to block executables, software libraries, scripts, installers, compiled HTML, HTML applications, and control panel applets not approved by your organisation?</label><br>
-<input type="radio" id="ML1-AC-03-yes" name="ML1-AC-03-name" value="yes">
+<input type="radio" id="ML1-AC-03-yes" name="ML1-AC-03" value="yes" required>
 <label for="ML1-AC-03-yes">Yes</label>
-<input type="radio" id="ML1-AC-03-no" name="ML1-AC-03-name" value="no">
+<input type="radio" id="ML1-AC-03-no" name="ML1-AC-03" value="no" required>
 <label for="ML1-AC-03-no">No</label>
 <div id="ML1-AC-03-details" hidden>
     <label for="ML1-AC-03-Detailed">Please Provide details</label>
@@ -516,9 +531,9 @@ legend {
 <h2>Restrict Microsoft Office macros</h2>
 
 <label for="ML1-RM-01">Are Microsoft Office macros turned off for users who do not need them for their work?</label><br>
-<input type="radio" id="ML1-RM-01-yes" name="ML1-RM-01-name" value="yes">
+<input type="radio" id="ML1-RM-01-yes" name="ML1-RM-01" value="yes" required>
 <label for="ML1-RM-01-yes">Yes</label>
-<input type="radio" id="ML1-RM-01-no" name="ML1-RM-01-name" value="no">
+<input type="radio" id="ML1-RM-01-no" name="ML1-RM-01" value="no" required>
 <label for="ML1-RM-01-no">No</label>
 <div id="ML1-RM-01-details" hidden>
     <label for="ML1-RM-01-Detailed">Please Provide details</label>
@@ -528,9 +543,9 @@ legend {
 
 
 <label for="ML1-RM-02">Are macros from the internet blocked in Microsoft Office applications?</label><br>
-<input type="radio" id="ML1-RM-02-yes" name="ML1-RM-02-name" value="yes">
+<input type="radio" id="ML1-RM-02-yes" name="ML1-RM-02" value="yes" required>
 <label for="ML1-RM-02-yes">Yes</label>
-<input type="radio" id="ML1-RM-02-no" name="ML1-RM-02-name" value="no">
+<input type="radio" id="ML1-RM-02-no" name="ML1-RM-02" value="no" required>
 <label for="ML1-RM-02-no">No</label>
 <div id="ML1-RM-02-details" hidden>
     <label for="ML1-RM-02-Detailed">Please Provide details</label>
@@ -540,9 +555,9 @@ legend {
 
 
 <label for="ML1-RM-03">Is antivirus scanning enabled for Microsoft Office macros?</label><br>
-<input type="radio" id="ML1-RM-03-yes" name="ML1-RM-03-name" value="yes">
+<input type="radio" id="ML1-RM-03-yes" name="ML1-RM-03" value="yes" required>
 <label for="ML1-RM-03-yes">Yes</label>
-<input type="radio" id="ML1-RM-03-no" name="ML1-RM-03-name" value="no">
+<input type="radio" id="ML1-RM-03-no" name="ML1-RM-03" value="no" required>
 <label for="ML1-RM-03-no">No</label>
 <div id="ML1-RM-03-details" hidden>
     <label for="ML1-RM-03-Detailed">Please Provide details</label>
@@ -552,9 +567,9 @@ legend {
 
 
 <label for="ML1-RM-04">Can users change Microsoft Office macro security settings on their own?</label><br>
-<input type="radio" id="ML1-RM-04-yes" name="ML1-RM-04-name" value="yes">
+<input type="radio" id="ML1-RM-04-yes" name="ML1-RM-04" value="yes" required>
 <label for="ML1-RM-04-yes">Yes</label>
-<input type="radio" id="ML1-RM-04-no" name="ML1-RM-04-name" value="no">
+<input type="radio" id="ML1-RM-04-no" name="ML1-RM-04" value="no" required>
 <label for="ML1-RM-04-no">No</label>
 <div id="ML1-RM-04-details" hidden>
     <label for="ML1-RM-04-Detailed">Please Provide details</label>
@@ -562,12 +577,12 @@ legend {
 </div>
 <br>
 
-<h2>User application hardening�</h2>
+<h2>User application hardening</h2>
 
 <label for="ML1-AH-01">Is Internet Explorer 11 disabled or removed from all systems?</label><br>
-<input type="radio" id="ML1-AH-01-yes" name="ML1-AH-01-name" value="yes">
+<input type="radio" id="ML1-AH-01-yes" name="ML1-AH-01" value="yes" required>
 <label for="ML1-AH-01-yes">Yes</label>
-<input type="radio" id="ML1-AH-01-no" name="ML1-AH-01-name" value="no">
+<input type="radio" id="ML1-AH-01-no" name="ML1-AH-01" value="no" required>
 <label for="ML1-AH-01-no">No</label>
 <div id="ML1-AH-01-details" hidden>
     <label for="ML1-AH-01-Detailed">Please Provide details</label>
@@ -577,9 +592,9 @@ legend {
 
 
 <label for="ML1-AH-02">Are web browsers configured to block Java from running on the internet?</label><br>
-<input type="radio" id="ML1-AH-02-yes" name="ML1-AH-02-name" value="yes">
+<input type="radio" id="ML1-AH-02-yes" name="ML1-AH-02" value="yes" required>
 <label for="ML1-AH-02-yes">Yes</label>
-<input type="radio" id="ML1-AH-02-no" name="ML1-AH-02-name" value="no">
+<input type="radio" id="ML1-AH-02-no" name="ML1-AH-02" value="no" required>
 <label for="ML1-AH-02-no">No</label>
 <div id="ML1-AH-02-details" hidden>
     <label for="ML1-AH-02-Detailed">Please Provide details</label>
@@ -589,9 +604,9 @@ legend {
 
 
 <label for="ML1-AH-03">Do web browsers block web advertisements from the internet?</label><br>
-<input type="radio" id="ML1-AH-03-yes" name="ML1-AH-03-name" value="yes">
+<input type="radio" id="ML1-AH-03-yes" name="ML1-AH-03" value="yes" required>
 <label for="ML1-AH-03-yes">Yes</label>
-<input type="radio" id="ML1-AH-03-no" name="ML1-AH-03-name" value="no">
+<input type="radio" id="ML1-AH-03-no" name="ML1-AH-03" value="no" required>
 <label for="ML1-AH-03-no">No</label>
 <div id="ML1-AH-03-details" hidden>
     <label for="ML1-AH-03-Detailed">Please Provide details</label>
@@ -601,9 +616,9 @@ legend {
 
 
 <label for="ML1-AH-04">Are web browser security settings managed and cannot be altered by users?</label><br>
-<input type="radio" id="ML1-AH-04-yes" name="ML1-AH-04-name" value="yes">
+<input type="radio" id="ML1-AH-04-yes" name="ML1-AH-04" value="yes" required>
 <label for="ML1-AH-04-yes">Yes</label>
-<input type="radio" id="ML1-AH-04-no" name="ML1-AH-04-name" value="no">
+<input type="radio" id="ML1-AH-04-no" name="ML1-AH-04" value="no" required>
 <label for="ML1-AH-04-no">No</label>
 <div id="ML1-AH-04-details" hidden>
     <label for="ML1-AH-04-Detailed">Please Provide details</label>
@@ -614,9 +629,9 @@ legend {
 <h2>Regular backups</h2>
 
 <label for="ML1-RB-01">Are backups performed in line with the criticality of the data and business continuity requirements?</label><br>
-<input type="radio" id="ML1-RB-01-yes" name="ML1-RB-01-name" value="yes">
+<input type="radio" id="ML1-RB-01-yes" name="ML1-RB-01" value="yes" required>
 <label for="ML1-RB-01-yes">Yes</label>
-<input type="radio" id="ML1-RB-01-no" name="ML1-RB-01-name" value="no">
+<input type="radio" id="ML1-RB-01-no" name="ML1-RB-01" value="no" required>
 <label for="ML1-RB-01-no">No</label>
 <div id="ML1-RB-01-details" hidden>
     <label for="ML1-RB-01-Detailed">Please Provide details</label>
@@ -626,9 +641,9 @@ legend {
 
 
 <label for="ML1-RB-02">Do your backup practices ensure data, applications, and settings can be restored to a specific point in time?</label><br>
-<input type="radio" id="ML1-RB-02-yes" name="ML1-RB-02-name" value="yes">
+<input type="radio" id="ML1-RB-02-yes" name="ML1-RB-02" value="yes" required>
 <label for="ML1-RB-02-yes">Yes</label>
-<input type="radio" id="ML1-RB-02-no" name="ML1-RB-02-name" value="no">
+<input type="radio" id="ML1-RB-02-no" name="ML1-RB-02" value="no" required>
 <label for="ML1-RB-02-no">No</label>
 <div id="ML1-RB-02-details" hidden>
     <label for="ML1-RB-02-Detailed">Please Provide details</label>
@@ -638,9 +653,9 @@ legend {
 
 
 <label for="ML1-RB-03">Are backups stored securely and in a way that ensures their resilience?</label><br>
-<input type="radio" id="ML1-RB-03-yes" name="ML1-RB-03-name" value="yes">
+<input type="radio" id="ML1-RB-03-yes" name="ML1-RB-03" value="yes" required>
 <label for="ML1-RB-03-yes">Yes</label>
-<input type="radio" id="ML1-RB-03-no" name="ML1-RB-03-name" value="no">
+<input type="radio" id="ML1-RB-03-no" name="ML1-RB-03" value="no" required>
 <label for="ML1-RB-03-no">No</label>
 <div id="ML1-RB-03-details" hidden>
     <label for="ML1-RB-03-Detailed">Please Provide details</label>
@@ -650,9 +665,9 @@ legend {
 
 
 <label for="ML1-RB-04">Is the restoration process from backups tested as part of your disaster recovery plan?</label><br>
-<input type="radio" id="ML1-RB-04-yes" name="ML1-RB-04-name" value="yes">
+<input type="radio" id="ML1-RB-04-yes" name="ML1-RB-04" value="yes" required>
 <label for="ML1-RB-04-yes">Yes</label>
-<input type="radio" id="ML1-RB-04-no" name="ML1-RB-04-name" value="no">
+<input type="radio" id="ML1-RB-04-no" name="ML1-RB-04" value="no" required>
 <label for="ML1-RB-04-no">No</label>
 <div id="ML1-RB-04-details" hidden>
     <label for="ML1-RB-04-Detailed">Please Provide details</label>
@@ -662,9 +677,9 @@ legend {
 
 
 <label for="ML1-RB-05">Can standard users access or modify backups they don?t own?</label><br>
-<input type="radio" id="ML1-RB-05-yes" name="ML1-RB-05-name" value="yes">
+<input type="radio" id="ML1-RB-05-yes" name="ML1-RB-05" value="yes" required>
 <label for="ML1-RB-05-yes">Yes</label>
-<input type="radio" id="ML1-RB-05-no" name="ML1-RB-05-name" value="no">
+<input type="radio" id="ML1-RB-05-no" name="ML1-RB-05" value="no" required>
 <label for="ML1-RB-05-no">No</label>
 <div id="ML1-RB-05-details" hidden>
     <label for="ML1-RB-05-Detailed">Please Provide details</label>
@@ -674,9 +689,9 @@ legend {
 
 
 <label for="ML1-RB-06">Are standard users prevented from deleting backups?</label><br>
-<input type="radio" id="ML1-RB-06-yes" name="ML1-RB-06-name" value="yes">
+<input type="radio" id="ML1-RB-06-yes" name="ML1-RB-06" value="yes" required>
 <label for="ML1-RB-06-yes">Yes</label>
-<input type="radio" id="ML1-RB-06-no" name="ML1-RB-06-name" value="no">
+<input type="radio" id="ML1-RB-06-no" name="ML1-RB-06" value="no" required>
 <label for="ML1-RB-06-no">No</label>
 <div id="ML1-RB-06-details" hidden>
     <label for="ML1-RB-06-Detailed">Please Provide details</label>
